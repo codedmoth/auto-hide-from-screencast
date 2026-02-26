@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Window Hider Configuration</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Hide on Launch -->
+   <item>
+    <layout class="QHBoxLayout" name="launchLayout">
+     <item>
+      <widget class="QLabel" name="labelLaunch">
+       <property name="text">
+        <string>Hide on &amp;launch:</string>
+       </property>
+       <property name="buddy">
+        <cstring>kcfg_hideOnLaunch</cstring>
+       </property>
+       <property name="minimumWidth">
+        <number>120</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="kcfg_hideOnLaunch">
+       <property name="placeholderText">
+        <string>firefox, chrome, thunderbird</string>
+       </property>
+       <property name="toolTip">
+        <string>Comma-separated list of window classes to hide when launching applications</string>
+       </property>
+       <property name="whatsThis">
+        <string>Enter window class names (WM_CLASS) separated by commas. Example: firefox, chrome, kdeconnect</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Spacer -->
+   <item>
+    <spacer name="verticalSpacer1">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <!-- Hide on Focus -->
+   <item>
+    <layout class="QHBoxLayout" name="focusLayout">
+     <item>
+      <widget class="QLabel" name="labelFocus">
+       <property name="text">
+        <string>Hide on &amp;focus:</string>
+       </property>
+       <property name="buddy">
+        <cstring>kcfg_hideOnFocus</cstring>
+       </property>
+       <property name="minimumWidth">
+        <number>120</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="kcfg_hideOnFocus">
+       <property name="placeholderText">
+        <string>dolphin, konsole, kate</string>
+       </property>
+       <property name="toolTip">
+        <string>Comma-separated list of window classes to hide when they receive focus</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Spacer -->
+   <item>
+    <spacer name="verticalSpacer2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <!-- Hide Always -->
+   <item>
+    <layout class="QHBoxLayout" name="alwaysLayout">
+     <item>
+      <widget class="QLabel" name="labelAlways">
+       <property name="text">
+        <string>Hide &amp;always:</string>
+       </property>
+       <property name="buddy">
+        <cstring>kcfg_hideAlways</cstring>
+       </property>
+       <property name="minimumWidth">
+        <number>120</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="kcfg_hideAlways">
+       <property name="placeholderText">
+        <string>discord, slack, spotify</string>
+       </property>
+       <property name="toolTip">
+        <string>Comma-separated list of window classes to always hide</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Info text -->
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="infoLabel">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#808080;&quot;&gt;Enter window class names (WM_CLASS) separated by commas. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#808080;&quot;&gt;Reload the script (disable and then re-enable) to update the config.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

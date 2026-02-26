@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Name": "Auto Hide from Screencast",
+        "Description": "Hides a application from screen captures upon it launching. (== Hide from Screencast option)",
+        "Icon": "view-private",
+
+        "Authors": [
+            {
+                "Email": "codedmoth@startmail.com",
+                "Name": "Atlas"
+            }
+        ],
+        "Id": "auto-hide-from-screencast",
+        "Version": "1.0",
+        "License": "GPLv3",
+        "Website": "https://github.com/codedmoth/kdescripts"
+    },
+    "X-Plasma-API": "javascript",
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}

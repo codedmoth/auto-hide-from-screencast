@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.standards/kcfg/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+
+    <group name="">
+        <entry name="hideOnLaunch" type="String">
+            <label>Hide on launch</label>
+            <default></default>
+        </entry>
+        <entry name="hideOnFocus" type="String">
+            <label>Hide on focus</label>
+            <default></default>
+        </entry>
+        <entry name="hideAlways" type="String">
+            <label>Hide Always</label>
+            <default></default>
+        </entry>
+    </group>
+</kcfg>
