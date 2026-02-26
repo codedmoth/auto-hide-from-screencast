@@ -2,9 +2,13 @@
 a little KDE script to enable the "Hide from Screencast" checkbox based on three conditions until they make it a Window Rule (if they ever do.. LOL)
 
 Hide on Launch = Hides when a window with a matching class opens
+
 Hide on Focus = ^ and whenever a window is focused
+
 Hide Always = Hides when a window is opened, focused, OR the "Hide from Screencast" option is toggled off.
+
 Config example: discord,1password,zen
+
 (note that the examples IN config.ui have spaces - I have not tested this.)
 
 
